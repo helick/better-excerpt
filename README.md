@@ -22,6 +22,42 @@ Via Composer:
 $ composer require helick/better-excerpt
 ```
 
+## Usage
+
+### Custom post type support
+
+Control supported post types:
+
+``` php
+add_filter('helick_better_excerpt_supported_post_types', function (array $postTypes) {
+    $postTypes[] = 'your-custom-post-type';
+
+    return $postTypes;
+});
+```
+
+Control the editor settings:
+
+``` php
+add_filter('helick_better_excerpt_editor_settings', function (array $settings) {
+    $settings['media_buttons'] = true;
+
+    return $settings;
+});
+```
+
+Control the editor buttons:
+
+``` php
+add_filter('helick_better_excerpt_editor_buttons', function (array $buttons) {
+    $buttons[] = 'alignleft';
+    $buttons[] = 'alignright';
+    $buttons[] = 'aligncenter';
+
+    return $buttons;
+});
+```
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
