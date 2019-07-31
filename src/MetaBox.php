@@ -2,7 +2,7 @@
 
 namespace Helick\BetterExcerpt;
 
-use Helick\BetterExcerpt\Contracts\Bootable;
+use Helick\Contracts\Bootable;
 use WP_Post;
 
 final class MetaBox implements Bootable
