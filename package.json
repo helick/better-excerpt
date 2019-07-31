@@ -1,5 +1,6 @@
 {
     "private": true,
+    "name": "@helick/better-excerpt",
     "release": {
         "verifyConditions": [
             "@semantic-release/github"
