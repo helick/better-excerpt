@@ -2,7 +2,7 @@
 
 namespace Helick\BetterExcerpt;
 
-use Helick\BetterExcerpt\Contracts\Bootable;
+use Helick\Contracts\Bootable;
 
 final class Editor implements Bootable
 {
